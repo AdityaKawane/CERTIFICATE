@@ -1,86 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator</title>
+    <title>Responsive Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: beige;
+        }
+        .certificate {
+            max-width: 800px;
+            width: 100%;
+            background:white;
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px blue;
+            text-align: center;
+        }
+        .certificate h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #0a74da;
+        }
+        .certificate p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        .certificate .recipient {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin: 20px 0;
+        }
+
+    </style>
 </head>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color:aqua;
-}
-
-.calculator {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
-.display {
-    background-color: #333;
-    border-radius: 10px 10px 0px 0px;
-    color: white;
-    font-size: 2em;
-    padding: 20px;
-    text-align: right;
-}
-
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-button {
-    flex: 1 0 25%;
-    padding: 20px;
-    font-size: 1.2em;
-    border: 1px solid paleturquoise;
-    background-color:cornsilk;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color:hotpink;
-}
-
-button.zero {
-    flex:50%;
-}
-button.css {
-    border-radius: 0px 0px 10px 10px ;
-}
-
-</style>
 <body>
-    <div class="calculator">
-        <div class="display">0</div>
-        <div class="buttons">
-            <button>C</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button class="zero">0</button>
-            <button>.</button>
-            <button class="css">=</button>
-        </div>
-    </div>
+    <div class="certificate">
+        <h1>Certificate of Achievement</h1>
+        <p>This certificate is presented to</p>
+        <div class="recipient">Aditya Balasaheb Kawane</div>
+        <p>For outstanding performance and dedication.</p>
+        <p>Date: December 31, 2024</p>  
 </body>
 </html>
